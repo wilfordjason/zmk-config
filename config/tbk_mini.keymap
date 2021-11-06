@@ -33,7 +33,7 @@
     &kp LALT    &kp Q       &kp W      &kp E         &kp R          &kp T                &kp Y           &kp U         &kp I     &kp O     &kp P           &kp DEL
     &kp LCTRL   &kp A       &kp S      &kp D         &kp F          &kp G                &kp H           &kp J         &kp K     &kp L     &kp SEMICOLON   &kp SQT
     &kp LSFHT   &kp Z       &kp X      &kp C         &kp V          &kp B                &kp N           &kp M         &kp COMMA &kp DOT   &kp SLASH       &kp RSHFT
-                                       &lt FUN ESC   &kp SPACE        &lt NUM TAB          &lt NUM ENTER   &hm LSFT BSPC &lt FUN LWIN 
+                                       &lt FUN ESC   &kp SPACE        &lt NUM TAB          &lt NUM ENTER   &hm LSFT BSPC &lt FUN LGUI 
             >;
         };
 
@@ -72,7 +72,7 @@
     &trans &trans    &trans    &trans    &trans    &trans                        &bt BT_CLR    &trans    &trans    &trans    &tog BLUE &trans
     &trans &trans    &trans    &trans    &trans    &trans                        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans
     &trans &trans    &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans &trans
-                               &trans    &trans    &trans                        &trans    &trans    &trans
+                               &trans    &trans    &trans                        trans    &trans    &trans
             >;
         };
 
