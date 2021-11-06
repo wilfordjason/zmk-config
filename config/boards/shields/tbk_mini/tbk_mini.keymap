@@ -10,8 +10,7 @@
 #define FUN     1
 #define NAV     2
 #define NUM     3
-#define MOUSE   4
-#define BLUE    5
+#define BLUE    4
 
 / {
 
@@ -28,15 +27,6 @@
     };
     keymap {
         compatible = "zmk,keymap";
-
-        //default_layer {
-            //bindings = <
-    //&kp C_PP     &kp Q       &kp W      &kp E         &kp R          &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P           &kp BSPC
-    //&kp C_NEXT   &hm LCTRL A &hm LALT S &lt NAV D     &lt SYMB F     &kp G       &kp H     &kp J     &kp K     &kp L     &hm RSHFT ENTER &kp C_VOL_UP
-    //&kp C_PREV   &kp Z       &kp X      &kp C         &lt NUM V      &kp B       &kp N     &kp M     &kp COMMA &kp DOT   &kp C_MUTE      &kp C_VOL_DN
-                                        //&hm LSHFT ESC &hm LGUI ENTER &kp DEL    &lt BLUE BSPC &lt NUM SEMI &lt SYMB SPC 
-            //>;
-        //};
         
         default_layer {
             bindings = <
@@ -49,7 +39,7 @@
 
 
 
-        func {
+        frow {
             bindings = <
     &trans       &kp PSCRN   &kp F7    &kp F8    &kp F9    &kp F12                        &trans    &trans    &trans    &trans    &trans &tog BLUE 
     &kp CAPS     &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &trans    &trans    &trans    &trans    &trans &trans 
@@ -58,7 +48,7 @@
             >;
         };
 
-        navi {
+        navigation {
             bindings = <
     &trans      &kp PG_UP &trans      &kp UP    &trans      &kp C_VOL_UP                     &trans     &kp HOME         &kp PG_DN        &kp PG_UP        &kp END      &trans 
     &trans      &kp PG_DN &kp LEFT   &kp DOWN  &kp RIGHT  &kp C_VOL_DN                     &trans     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT    &trans
@@ -76,14 +66,6 @@
             >;
         };
 
-        mousenav {
-            bindings = <
-    &trans &trans     &trans      &kp UP    &trans      &trans                         &trans     &trans     &non      &trans     &trans   &trans 
-    &trans &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans                         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans   &trans 
-    &trans &trans     &kp C_PREV &kp K_PP  &kp C_NEXT &kp K_MUTE                    &trans     &trans     &trans     &trans     &trans   &trans 
-                               &trans     &trans      &trans                         &trans     &trans     &trans
-            >;
-        };
 
         blue {
             bindings = <
