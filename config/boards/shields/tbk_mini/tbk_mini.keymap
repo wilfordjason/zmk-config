@@ -51,46 +51,46 @@
 
         func {
             bindings = <
-    &none       &kp PSCRN   &kp F7    &kp F8    &kp F9    &kp F12                        &none    &none    &none    &none    &none &tog BLUE 
-    &none       &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &none    &none    &none    &none    &none &none 
-    &none       &kp PAUS    &kp F1    &kp F2    &kp F3    &kp F10                        &none    &none    &none    &none    &none &none 
-                                      &none     &none     &none                          &none     &none     &none
+    &trans       &kp PSCRN   &kp F7    &kp F8    &kp F9    &kp F12                        &trans    &trans    &trans    &trans    &trans &tog BLUE 
+    &trans       &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &trans    &trans    &trans    &trans    &trans &trans 
+    &trans       &kp PAUS    &kp F1    &kp F2    &kp F3    &kp F10                        &trans    &trans    &trans    &trans    &trans &trans 
+                                      &trans     &trans     &trans                          &trans     &trans     &trans
             >;
         };
 
         navi {
             bindings = <
-    &none      &kp PG_UP &none      &kp UP    &none      &kp K_VOL_UP                     &none     &kp HOME         &kp PG_DN        &kp PG_UP        &kp END      &none 
-    &none      &kp PG_DN &kp LEFT   &kp DOWN  &kp RIGHT  &kp K_VOL_DN                     &none     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT    &none
-    &none      &none     &kp C_PREV &kp K_PP  &kp C_NEXT &kp K_MUTE                       &none     &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT   &none 
-                                    &none     &none      &none                            &none     &none            &none
+    &trans      &kp PG_UP &trans      &kp UP    &trans      &kp K_VOL_UP                     &trans     &kp HOME         &kp PG_DN        &kp PG_UP        &kp END      &trans 
+    &trans      &kp PG_DN &kp LEFT   &kp DOWN  &kp RIGHT  &kp K_VOL_DN                     &trans     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT    &trans
+    &trans      &trans     &kp C_PREV &kp K_PP  &kp C_NEXT &kp K_MUTE                       &trans     &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT   &trans 
+                                    &trans     &trans      &trans                            &trans     &trans            &trans
             >;
         };
 
         numbers {
             bindings = <
-    &none    &kp LBRC  &kp N7    &kp N8    &kp N9    &kp RBRC                      &kp LBRC  &kp N7    &kp N8    &kp N9    &kp RBRC  &none
-    &none    &kp MINUS &kp N3    &kp N4    &kp N5    &kp EQUAL                     &kp MINUS &kp N3    &kp N4    &kp N5    &kp EQUAL &none
-    &tog NAV &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT                       &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT   &none
-                                 &none     &none     &none                         &none     &none     &none
+    &trans    &kp LBRC  &kp N7    &kp N8    &kp N9    &kp RBRC                      &kp LBRC  &kp N7    &kp N8    &kp N9    &kp RBRC  &trans
+    &trans    &kp MINUS &kp N3    &kp N4    &kp N5    &kp EQUAL                     &kp MINUS &kp N3    &kp N4    &kp N5    &kp EQUAL &trans
+    &tog NAV &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT                       &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT   &trans
+                                 &trans     &trans     &trans                         &trans     &trans     &trans
             >;
         };
 
         mousenav {
             bindings = <
-    &none &none     &none      &kp UP    &none      &none                         &none     &none     &non      &none     &none   &none 
-    &none &none     &kp LEFT   &kp DOWN  &kp RIGHT  &none                         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none   &none 
-    &none &none     &kp C_PREV &kp K_PP  &kp C_NEXT &kp K_MUTE                    &none     &none     &none     &none     &none   &none 
-                               &none     &none      &none                         &none     &none     &none
+    &trans &trans     &trans      &kp UP    &trans      &trans                         &trans     &trans     &non      &trans     &trans   &trans 
+    &trans &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans                         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans   &trans 
+    &trans &trans     &kp C_PREV &kp K_PP  &kp C_NEXT &kp K_MUTE                    &trans     &trans     &trans     &trans     &trans   &trans 
+                               &trans     &trans      &trans                         &trans     &trans     &trans
             >;
         };
 
         blue {
             bindings = <
-    &none    &none    &none    &none    &none                        &bt BT_CLR    &none    &none    &none    &none
-    &none    &none    &none    &none    &none                        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-    &none    &none    &none    &none    &none                        &none    &none    &none    &none    &none
-                      &none    &none    &none                        &none    &none    &none
+    &trans    &trans    &trans    &trans    &trans                        &bt BT_CLR    &trans    &trans    &trans    &trans
+    &trans    &trans    &trans    &trans    &trans                        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+    &trans    &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans
+                      &trans    &trans    &trans                        &trans    &trans    &trans
             >;
         };
 
