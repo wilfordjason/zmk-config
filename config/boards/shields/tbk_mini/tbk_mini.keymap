@@ -27,7 +27,6 @@
         };
     };
 
-    / {
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -66,7 +65,7 @@
             bindings = <&kp ENTER>;
         };
     };
-};
+    
     keymap {
         compatible = "zmk,keymap";
         
