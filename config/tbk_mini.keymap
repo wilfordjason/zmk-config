@@ -37,22 +37,22 @@
         combo_undo {
             timeout-ms = <25>;
             key-positions = <25 26>;
-            bindings = <&kp C_AC_UNDO>;
+            bindings = <&kp K_AC_UNDO>;
         };
         combo_cut {
             timeout-ms = <25>;
             key-positions = <26 27>;
-            bindings = <&kp C_AC_CUT>;
+            bindings = <&kp K_AC_CUT>;
         };
         combo_copy {
             timeout-ms = <25>;
             key-positions = <27 28>;
-            bindings = <&kp C_AC_COPY>;
+            bindings = <&kp K_AC_COPY>;
         };
         combo_paste {
             timeout-ms = <25>;
             key-positions = <29 30>;
-            bindings = <&kp C_AC_PASTE>;
+            bindings = <&kp K_AC_PASTE>;
         };
         combo_bspc {
             timeout-ms = <25>;
@@ -61,8 +61,52 @@
         };
         combo_enter {
             timeout-ms = <25>;
-            key-positions = <16 17>;
+            key-positions = <2 3>;
             bindings = <&kp ENTER>;
+        };
+
+        // LEFT alt ctl sft gui
+        combo_lalt {
+            timeout-ms = <25>;
+            key-positions = <13 14>;
+            bindings = <&sk LALT>;
+        };
+        combo_lctl {
+            timeout-ms = <25>;
+            key-positions = <14 15>;
+            bindings = <&sk LCTRL>;
+        };
+        combo_lsft {
+            timeout-ms = <25>;
+            key-positions = <15 16>;
+            bindings = <&sk LSHFT>;
+        };
+        combo_lgui {
+            timeout-ms = <25>;
+            key-positions = <16 17>;
+            bindings = <&sk LGUI>;
+        };
+
+        // RIGHT alt ctl sft gui
+        combo_ralt {
+            timeout-ms = <25>;
+            key-positions = <21 22>;
+            bindings = <&sk RALT>;
+        };
+        combo_rctl {
+            timeout-ms = <25>;
+            key-positions = <20 21>;
+            bindings = <&sk RCTRL>;
+        };
+        combo_rsft {
+            timeout-ms = <25>;
+            key-positions = <19 20>;
+            bindings = <&sk RSHFT>;
+        };
+        combo_rgui {
+            timeout-ms = <25>;
+            key-positions = <18 19>;
+            bindings = <&sk RGUI>;
         };
     };
     
@@ -71,7 +115,7 @@
         
         default_layer {
             bindings = <
-    &kp LALT    &kp Q       &kp W      &kp E         &kp R          &kp T                &kp Y           &kp U         &kp I     &kp O     &kp P           &tog COLE
+    &kp LALT    &kp Q       &kp W      &kp E         &kp R          &kp T                &kp Y           &kp U         &kp I     &kp O     &kp P           &kp BSPC
     &kp LCTRL   &kp A       &kp S      &kp D         &kp F          &kp G                &kp H           &kp J         &kp K     &kp L     &kp SEMICOLON   &kp SQT
     &kp LSHFT   &kp Z       &kp X      &kp C         &kp V          &kp B                &kp N           &kp M         &kp COMMA &kp DOT   &kp SLASH       &kp RSHFT
                                        &lt NUM ESC   &kp SPACE      &lt NAV TAB          &lt NUM ENTER   &hm LSFT BSPC &lt FUN LGUI 
@@ -80,7 +124,7 @@
 
         colemak_layer {
             bindings = <
-    &kp LALT    &kp Q       &kp W      &kp F         &kp P          &kp B                &kp J           &kp L         &kp U     &kp Y     &kp SEMICOLON   &tog COLE
+    &kp LALT    &kp Q       &kp W      &kp F         &kp P          &kp B                &kp J           &kp L         &kp U     &kp Y     &kp SEMICOLON   &kp BSPC
     &kp LCTRL   &kp A       &kp R      &kp S         &kp T          &kp G                &kp M           &kp N         &kp E     &kp I     &kp O           &kp SQT
     &kp LSHFT   &kp Z       &kp X      &kp C         &kp D          &kp V                &kp K           &kp H         &kp COMMA &kp DOT   &kp SLASH       &kp RSHFT
                                        &lt NUM ESC   &kp SPACE      &lt NAV TAB          &lt NUM ENTER   &hm LSFT BSPC &lt FUN LGUI 
@@ -91,10 +135,10 @@
 
         funrow_layer {
             bindings = <
-    &trans       &kp PSCRN   &kp F7    &kp F8    &kp F9    &kp F12                        &none    &none    &none    &none    &none &tog BLUE 
-    &kp CAPS    &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &none    &none    &none    &none    &none &none 
-    &trans       &kp PAUS    &kp F1    &kp F2    &kp F3    &kp F10                        &none    &none    &none    &none    &none &none 
-                                      &none     &none     &none                          &none     &none     &none
+    &trans       &kp PSCRN   &kp F7    &kp F8    &kp F9    &kp F12                        &none    &none    &none    &tog COLE   &none &sl BLUE 
+    &kp CAPS     &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &none    &none    &none    &none       &none &none 
+    &trans       &kp PAUS    &kp F1    &kp F2    &kp F3    &kp F10                        &none    &none    &none    &none       &none &none 
+                                       &none     &none     &none                          &none    &none    &none
             >;
         };
 
@@ -119,10 +163,10 @@
 
         bluetooth_layer {
             bindings = <
-    &none &none    &none    &none    &none    &none                        &bt BT_CLR    &none        &none        &none        &none         &tog BLUE
-    &none &none    &none    &none    &none    &none                        &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none
-    &none &none    &none    &none    &none    &none                        &none         &none        &none        &none        &none         &none
-                            &none    &none    &none                        &none    &none    &none
+    &none &none    &none       &none    &none         &none                        &bt BT_CLR    &none        &none        &none        &none         &none
+    &none &none    &bt BT_PRV  &none    &bt BT_NXT    &none                        &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none
+    &none &none    &none       &none    &none         &none                        &none         &none        &none        &none        &none         &none
+                               &none    &none         &none                        &none         &none        &none
             >;
         };
 
