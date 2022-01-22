@@ -163,7 +163,8 @@
     &kp CAPS     &kp SLCK    &kp F4    &kp F5    &kp F6    &kp F11                        &none    &kp F4    &kp F5    &kp F6    &kp F11    &none 
     &trans       &kp PAUS    &kp F1    &kp F2    &kp F3    &kp F10                        &none    &kp F1    &kp F2    &kp F3    &kp F10    &none 
                                        &trans    &trans    &trans                         &trans   &trans   &trans
-            >;        };
+            >;        
+        };
 
         nav_layer {
             bindings = <
@@ -176,9 +177,9 @@
 
         numbers_layer {
             bindings = <
-    &trans    &kp FSLH  &kp N7    &kp N8    &kp N9    &kp STAR                      &kp FSLH     &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_STAR   &none
-    &trans    &kp DOT   &kp N4    &kp N5    &kp N6    &kp MINUS                     &kp DOT      &kp KP_N4    &kp KP_N5    &kp KP_N6    &kp KP_MINUS  &none
-    &trans    &kp N0    &kp N1    &kp N2    &kp N3    &kp PLUS                      &kp KP_N0    &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_PLUS   &none
+    &trans    &kp FSLH  &kp N7    &kp N8    &kp N9    &kp STAR                      &kp FSLH     &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp STAR   &none
+    &trans    &kp DOT   &kp N4    &kp N5    &kp N6    &kp MINUS                     &kp DOT      &kp KP_N4    &kp KP_N5    &kp KP_N6    &kp MINUS  &none
+    &trans    &kp N0    &kp N1    &kp N2    &kp N3    &kp PLUS                      &kp KP_N0    &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp PLUS   &none
                                   &trans    &trans    &trans                        &trans       &trans       &trans
             >;
         };
